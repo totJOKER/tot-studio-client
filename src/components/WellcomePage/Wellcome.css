@@ -1,0 +1,52 @@
+.wellcome-page {
+    width: 100vw;
+    height: 100vh;
+
+    position: absolute;
+    background-color: #000003;
+    z-index: 15;
+}
+.wellcome-gradient-container {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(243deg, rgba(115, 74, 232, 0.33) 0%, rgba(115, 74, 232, 0.00) 16.23%);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+}
+.wellcome-title {
+    font-size: 30vw;
+    letter-spacing: -2vw;
+    color: #864AE8;
+}
+.wellcome-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    width: 50%;
+}
+.wellcome-description-title {
+    font-size: 1.5vw;
+}
+.wellcome-description {
+    font-size: 1vw;
+    width: 100%;
+}
+.wellcome-button {
+    padding: 1vw 2vw;
+    border: 3px solid #864AE8;
+    width: fit-content;
+    transition: 0.3s;
+}
+.wellcome-button p {
+    color: #864AE8;
+    transition: 0.3s;
+}
+.wellcome-button:hover {
+    background-color: #864AE8;
+}
+.wellcome-button:hover p {
+    color: black;
+}

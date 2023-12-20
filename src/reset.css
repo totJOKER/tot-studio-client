@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  font-size: 1.5vw;
+
+  background-color: transparent;
+  color: white;
+  border: none;
+
+  text-decoration: none;
+  list-style-type: none;
+}
+
+html,
+body,
+#root,
+.main-page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+@font-face {
+  font-family: 'BigShouldersDisplay';
+  src: url('/fonts/BigShouldersDisplay-Bold.ttf');
+}
+
+h2 {
+  font-family: 'BigShouldersDisplay';
+}
+
+@font-face {
+  font-family: 'Disket-Mono';
+  src: url('/fonts/Disket-Mono-Regular.ttf');
+}
+
+h1,
+::after {
+  font-family: 'Disket-Mono';
+}
+
+@font-face {
+  font-family: 'Pobeda';
+  src: url('/fonts/pobeda-bold.ttf');
+}
+
+p, div {
+  font-family: 'Pobeda';
+}
+
+.main-page {
+  position: relative;
+  z-index: 3;
+}
+
+.background {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+
+  left: 0;
+  top: 0;
+  background-color: #000003;
+  z-index: 1;
+}
+
+.gradient-container {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(243deg, rgba(115, 74, 232, 0.33) 0%, rgba(115, 74, 232, 0.00) 16.23%);
+}
+
+.element-show {
+  animation-name: show;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.3s;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateY(-1vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.three-show {
+  animation-name: three;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1s;
+}
+
+@keyframes three {
+  0% {
+    opacity: 0;
+    filter: blur(30px);
+  }
+  100% {
+    filter: blur(0);
+    opacity: 1;
+  }
+}

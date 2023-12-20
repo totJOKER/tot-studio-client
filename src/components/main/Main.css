@@ -1,0 +1,27 @@
+.three-page {
+    background-color: black;
+    width: 75%;
+    height: 82%;
+    margin-top: 8vh;
+    border: 1px solid rgba(255, 255, 255, 0.13);
+}
+
+.page {
+    width: 75%;
+    height: 82%;
+    background: linear-gradient(90deg, rgba(153, 74, 232, 0.00) 0%, rgba(115, 74, 232, 0.17) 51.94%, rgba(153, 74, 232, 0.00) 100%);
+    margin-top: 8vh;
+    border: 1px solid rgba(255, 255, 255, 0.13);
+}
+
+.three-text::after {
+    content: 'DESIGN & DEVELOPMENT STUDIO';
+    position: absolute;
+    top: 2vh;
+    left: 2vh;
+    z-index: 10;
+    color: white;
+    font-size: 2.5vw;
+    width: 50%;
+    text-shadow: 0 0 10px black;
+}
