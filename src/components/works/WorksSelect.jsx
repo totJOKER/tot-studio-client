@@ -2,6 +2,7 @@ import React from 'react'
 import axios from 'axios'
 
 export default function WorksSelect() {
+    
     let workSelect = localStorage.getItem('work')
 
     let [works, setWorks] = React.useState([])
@@ -15,10 +16,10 @@ export default function WorksSelect() {
     <div>
 
         {works.map((data, i) => {
-            if (workSelect == i + 1) {
+            if (workSelect[7] == i + 1) {
                 return (
                     // eslint-disable-next-line react/jsx-key
-                    <section className='work-info-container'>
+                    <section className='element-show work-info-container'>
                         <div className="work-description-info">
                             <div className="work-description-title">Детали</div>
                             <div className="work-description-box">

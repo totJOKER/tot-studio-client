@@ -12,7 +12,7 @@ export const HeaderButtons = [
     {
         name: 'Работы',
         description: 'все работы от нашей студии по дизайну и не только',
-        url: '/works',
+        url: `${localStorage.getItem("work")}`,
     },
     {
         name: 'Контакты',

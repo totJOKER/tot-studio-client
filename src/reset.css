@@ -13,6 +13,29 @@
   list-style-type: none;
 }
 
+a,
+button,
+img,
+div {
+  user-select: none;
+}
+
+.nav-info-description-back,
+.about-skills-skill-description,
+.about-info-info-div,
+.work-shell-text,
+.work-text,
+.contacts-info-p-statement,
+.nav-info-description {
+  user-select: text;
+}
+
+::selection {
+  background: #5832c2;
+  color: black;
+  text-shadow: none;
+}
+
 html,
 body,
 #root,

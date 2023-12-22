@@ -6,7 +6,7 @@ import InfoWorkBar from './components/static-bar/InfoWorkBar'
 import Main from './components/main/Main'
 import About from './components/about/About'
 import Contacts from './components/contacts/Contacts'
-import Works from './components/works/works'
+import Works from './components/works/Works'
 import Wellcome from './components/WellcomePage/Wellcome'
 import WorksSelect from './components/works/WorksSelect'
 

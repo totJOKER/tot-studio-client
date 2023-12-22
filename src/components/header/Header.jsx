@@ -1,19 +1,21 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { HeaderButtons } from '../../store/store'
 
 import './Header.css'
 
 export default function Header() {
+    
+    let [updateEl, setUpdateEl] = useState({
+        url: `${localStorage.getItem("work")}`
+    })
+    
 
-    const isOnLocal  = () => {
-        localStorage.setItem('work', 1)
-    }
 
     return (
         <nav className='header'>
             {HeaderButtons.map(data => (
-                <NavLink onClick={isOnLocal} className='header-button' to={data.url} >
+                <NavLink onClick={() => setUpdateEl({url: `${localStorage.getItem("work")}`})} className='header-button' to={data.name == 'Работы' ? updateEl.url : data.url} >
                     <p className='header-name'>{data.name}</p>
                     <p className='header-description'>{data.description}</p>
                 </NavLink>
